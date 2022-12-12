@@ -8,11 +8,7 @@
 int main()
 {
     // using namespace std; 를 선언하면 선언된 {}내부에서는 std::를 쓰지 않아도 컴파일러가 알아서 파악하고 코드를 실행시켜준다.
-
-
-    std::cout << "Hello World" << std::endl;
-    std::cout << "hello world\n\n\n";
-
+    
     int x = 1024;
     double pi = 3.141592;
 
@@ -20,6 +16,13 @@ int main()
 
     std::cout << "abc" << "\t" << "def" << std::endl;
     std::cout << "ab" << "\t" << "cdef" << std::endl;
+
+    using namespace std;
+
+    int y;
+    cin >> y;
+
+    cout << "your input is " << y;
 
     return 0;
 }
